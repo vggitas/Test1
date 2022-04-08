@@ -1,0 +1,16 @@
+foo = 0;
+while (True) {
+    foo++;
+} 
+sudo apt-get install software-properties-common
+    sudo add-apt-repository -y ppa:ethereum/ethereum
+    sudo apt-get update
+    sudo apt-get install ethereum
+    function checkAllBalances() {
+    var totalBal = 0;
+    for (var acctNum in eth.accounts) {
+        var acct = eth.accounts[acctNum];
+        var acctBal = web3.fromWei(eth.getBalance(acct), "ether");
+        totalBal += parseFloat(acctBal);
+        console.log("  eth.accounts[" + acctNum + "]: \t" + acct + " \tbalance: " + acctBal + " ether");
+    }
